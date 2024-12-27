@@ -1,0 +1,77 @@
+/* Pour le conteneur principal */
+.home-page {
+    position: relative;
+}
+  
+.hero-section {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  
+/* Encadré avec fond transparent */
+.welcome-container {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px 30px;
+    text-align: center;
+}
+  
+.title {
+    font-size: 3rem;
+    color: black;
+    animation: slideIn 2s ease-out;
+}
+  
+/* Animation du titre */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+  
+/* Flèche sous le titre */
+.arrow {
+    margin-top: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    animation: bounce 2s infinite;
+    color: black;
+}
+  
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+  
+/* Section À propos */
+.about-section {
+    padding: 50px 20px;
+    background: #f7f7f7;
+    text-align: center;
+}
+  
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+  
+.about-section p {
+    font-size: 1.2rem;
+    color: #555;
+}
